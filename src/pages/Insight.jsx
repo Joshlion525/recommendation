@@ -7,7 +7,13 @@ import { BsFillBellFill } from "react-icons/bs";
 import { BsPersonFill } from "react-icons/bs";
 import SideNav from "../components/SideNav";
 import product from "../assets/Product.svg";
+import budweiser from "../assets/BudweiserBottle.svg";
+import trophy from "../assets/Trophy.svg";
+import betamalt from "../assets/BetaMalt.svg";
+import grandmalt from "../assets/GrandMalt.svg";
+import eagle from "../assets/Eagle.svg";
 import { CarouselSpacing } from "@/components/CarouselSpacing";
+import { SheetDemo } from "@/components/SheetDemo";
 
 const Insight = () => {
 	return (
@@ -81,20 +87,21 @@ const Insight = () => {
 									<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md">
 										Recommended order
 									</button>
+									<SheetDemo></SheetDemo>
 								</div>
 							</div>
 							<div className="py-5 grid grid-cols-2">
 								<div className="flex items-center gap-2 py-4">
 									<div>
 										<img
-											src={product}
+											src={budweiser}
 											alt=""
 											className=""
 										/>
 									</div>
 									<div className="text-sm">
 										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
+											Budweiser 600ml × 12 (RB)
 										</h1>
 										<h1 className="text-[#404040]">
 											<span className="text-[#808080]">
@@ -114,7 +121,23 @@ const Insight = () => {
 									</div>
 									<div className="text-sm">
 										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
+											Budweiser 500ml × 24 (Can)
+										</h1>
+										<h1 className="text-[#404040]">
+											<span className="text-[#808080]">
+												Qty left:
+											</span>{" "}
+											50
+										</h1>
+									</div>
+								</div>
+								<div className="flex items-center gap-2 py-4">
+									<div>
+										<img src={trophy} alt="" className="" />
+									</div>
+									<div className="text-sm">
+										<h1 className="font-bold">
+											Trophy Stout 600 ml × 12 (RB)
 										</h1>
 										<h1 className="text-[#404040]">
 											<span className="text-[#808080]">
@@ -127,34 +150,14 @@ const Insight = () => {
 								<div className="flex items-center gap-2 py-4">
 									<div>
 										<img
-											src={product}
+											src={betamalt}
 											alt=""
 											className=""
 										/>
 									</div>
 									<div className="text-sm">
 										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
-										</h1>
-										<h1 className="text-[#404040]">
-											<span className="text-[#808080]">
-												Qty left:
-											</span>{" "}
-											50
-										</h1>
-									</div>
-								</div>
-								<div className="flex items-center gap-2 py-4">
-									<div>
-										<img
-											src={product}
-											alt=""
-											className=""
-										/>
-									</div>
-									<div className="text-sm">
-										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
+											Beta Malt 330 ml × 24 (PET)
 										</h1>
 										<h1 className="text-[#404040]">
 											<span className="text-[#808080]">
@@ -184,49 +187,45 @@ const Insight = () => {
 								<div className="flex items-center gap-2 py-4">
 									<div>
 										<img
-											src={product}
+											src={grandmalt}
 											alt=""
 											className=""
 										/>
 									</div>
 									<div className="text-sm">
 										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
+											Grand Malt 330 ml × 24 (CAN)
+										</h1>
+									</div>
+								</div>
+								<div className="flex items-center gap-2 py-4">
+									<div>
+										<img src={eagle} alt="" className="" />
+									</div>
+									<div className="text-sm">
+										<h1 className="font-bold">
+											Eagle Lager 600 ml × 12 (RB)
 										</h1>
 									</div>
 								</div>
 								<div className="flex items-center gap-2 py-4">
 									<div>
 										<img
-											src={product}
+											src={betamalt}
 											alt=""
 											className=""
 										/>
 									</div>
 									<div className="text-sm">
 										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
-										</h1>
-									</div>
-								</div>
-								<div className="flex items-center gap-2 py-4">
-									<div>
-										<img
-											src={product}
-											alt=""
-											className=""
-										/>
-									</div>
-									<div className="text-sm">
-										<h1 className="font-bold">
-											Budweiser 600ml * 12 (RB)
+											Beta Malt 330 ml × 24 (PET)
 										</h1>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div className="bg-white rounded-lg flex-1">
+					<div className="bg-white rounded-lg flex-1 h-fit">
 						<div className="bg-black text-white py-5 px-7 rounded-t-lg">
 							<h1>Increase sales</h1>
 						</div>
@@ -238,8 +237,24 @@ const Insight = () => {
 									customers happy, and grow like never before
 								</h1>
 							</div>
-							<div className="flex justify-center py-10">
+							<div className="flex justify-center py-10 overflow-hidden">
 								<CarouselSpacing></CarouselSpacing>
+							</div>
+							<span className="block w-full h-[1px] bg-[#BFBFBF] my-5"></span>
+							<div className="p-5 mt-16 bg-[#F5F5F5] rounded-lg">
+								<h1>
+									Our AI has automatically identified
+									opportunities for some of your customers to
+									increase their sales. Please reach out to
+									them and remind them to buy these products
+									from you to increase their sales. View
+									customers
+								</h1>
+								<div className="flex justify-end pt-4">
+									<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md">
+										View customers
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>
