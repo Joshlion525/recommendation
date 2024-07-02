@@ -14,7 +14,12 @@ export function SheetDemo() {
 	return (
 		<Sheet>
 			<SheetTrigger asChild>
-				<Button variant="outline">Open</Button>
+				<Button
+					variant="outline"
+					className="bg-[#E5B611] font-bold px-8 py-3"
+				>
+					Recommended order
+				</Button>
 			</SheetTrigger>
 			<SheetContent className="bg-white w-[1000px] sm:w-[540px]">
 				<SheetHeader>

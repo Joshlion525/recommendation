@@ -84,9 +84,6 @@ const Insight = () => {
 									soon as possible
 								</h1>
 								<div className="flex justify-end pt-4">
-									<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md">
-										Recommended order
-									</button>
 									<SheetDemo></SheetDemo>
 								</div>
 							</div>

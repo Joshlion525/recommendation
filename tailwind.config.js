@@ -20,6 +20,9 @@ module.exports = {
 			fontFamily: {
 				Poppins: "Poppins, sans-serif",
 			},
+			maxWidth: {
+				"3xl": "1000px",
+			},
 			colors: {
 				border: "hsl(var(--border))",
 				input: "hsl(var(--input))",
