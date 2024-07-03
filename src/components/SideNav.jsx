@@ -11,7 +11,7 @@ import Logo from "../assets/KujaLogo.svg"
 
 const SideNav = () => {
 	return (
-		<div className="bg-black min-h-screen w-[10%] text-gray-500 text-center flex flex-col gap-12">
+		<div className="bg-black min-h-screen w-[10%] text-gray-500 text-center flex flex-col gap-10">
 			<div className="py-3 flex justify-center">
 				<img src={Logo} alt="" className="w-[40%]" />
 			</div>

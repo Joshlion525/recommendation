@@ -12,15 +12,15 @@ import trophy from "../assets/Trophy.svg";
 import betamalt from "../assets/BetaMalt.svg";
 import grandmalt from "../assets/GrandMalt.svg";
 import eagle from "../assets/Eagle.svg";
-import { CarouselSpacing } from "@/components/CarouselSpacing";
-import { SheetDemo } from "@/components/SheetDemo";
+
+
 
 const Insight = () => {
 	return (
 		<div className="flex">
 			<SideNav />
-			<div className="flex-1">
-				<div className="flex justify-between items-center py-3 px-10 border-b-2 border-gray-400 bg-[#F5F5F5]">
+			<div className="flex-1 bg-[#F5F5F5]">
+				<div className="flex justify-between items-center py-3 px-10 border-b border-gray-400 ">
 					<div className="flex items-center gap-4">
 						<div className="border border-gray-400 p-1 rounded-lg">
 							<BiArrowBack className="text-xl" />
@@ -71,21 +71,18 @@ const Insight = () => {
 						</div>
 					</div>
 				</div>
-				<div className="px-10 py-7 bg-[#F5F5F5] flex gap-10">
+				<div className="px-10 py-7 flex gap-10">
 					<div className="bg-white rounded-lg flex-1">
 						<div className="bg-black text-white py-5 px-7 rounded-t-lg">
 							<h1>Product Replenishment</h1>
 						</div>
 						<div className="p-7">
 							<div className="p-5 bg-[#F5F5F5] rounded-lg">
-								<h1>
+								<p className="text-sm">
 									You're running low on the products below;
 									please contact your CXC Agent to restock as
 									soon as possible
-								</h1>
-								<div className="flex justify-end pt-4">
-									<SheetDemo></SheetDemo>
-								</div>
+								</p>
 							</div>
 							<div className="py-5 grid grid-cols-2">
 								<div className="flex items-center gap-2 py-4">
@@ -168,13 +165,13 @@ const Insight = () => {
 							<span className="block w-full h-[2px] bg-[#BFBFBF] my-10"></span>
 							<div className="bg-[#F5F5F5]">
 								<div className="p-5 bg-[#F5F5F5] rounded-lg">
-									<h1>
+									<p className="text-sm">
 										The demand for the products below has
 										increased in your area; consider
 										stocking up on them as soon possible
-									</h1>
+									</p>
 									<div className="flex justify-end pt-4">
-										<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md">
+										<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md text-sm">
 											Recommended order
 										</button>
 									</div>
@@ -228,27 +225,24 @@ const Insight = () => {
 						</div>
 						<div className="p-7">
 							<div className="p-5 bg-[#F5F5F5] rounded-lg">
-								<h1>
+								<p className="text-sm">
 									Discover selling opportunities to boost your
 									sales. Get ready to sell more, make your
 									customers happy, and grow like never before
-								</h1>
-							</div>
-							<div className="flex justify-center py-10 overflow-hidden">
-								<CarouselSpacing></CarouselSpacing>
+								</p>
 							</div>
 							<span className="block w-full h-[1px] bg-[#BFBFBF] my-5"></span>
 							<div className="p-5 mt-16 bg-[#F5F5F5] rounded-lg">
-								<h1>
+								<p className="text-sm">
 									Our AI has automatically identified
 									opportunities for some of your customers to
 									increase their sales. Please reach out to
 									them and remind them to buy these products
 									from you to increase their sales. View
 									customers
-								</h1>
+								</p>
 								<div className="flex justify-end pt-4">
-									<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md">
+									<button className="bg-[#E5B611] font-bold px-8 py-3 rounded-md text-sm">
 										View customers
 									</button>
 								</div>
