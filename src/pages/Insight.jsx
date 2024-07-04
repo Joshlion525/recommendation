@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BiArrowBack } from "react-icons/bi";
 import { FaWarehouse } from "react-icons/fa6";
 import { FaCaretDown } from "react-icons/fa";
@@ -12,10 +12,13 @@ import trophy from "../assets/Trophy.svg";
 import betamalt from "../assets/BetaMalt.svg";
 import grandmalt from "../assets/GrandMalt.svg";
 import eagle from "../assets/Eagle.svg";
-
-
+import SideModal from "../components/SideModal";
 
 const Insight = () => {
+	const [isOpen, setIsOpen] = useState(false);
+	const toggleModal = () => {
+		setIsOpen(!isOpen);
+	};
 	return (
 		<div className="flex">
 			<SideNav />
@@ -78,12 +81,22 @@ const Insight = () => {
 						</div>
 						<div className="p-7">
 							<div className="p-5 bg-[#F5F5F5] rounded-lg">
-								<p className="text-sm">
+								<p>
 									You're running low on the products below;
 									please contact your CXC Agent to restock as
 									soon as possible
 								</p>
+								<div className="flex justify-end pt-4">
+									<button
+										className="bg-[#E5B611] font-bold px-8 py-3 rounded-md text-sm"
+										onClick={toggleModal}
+									>
+										Recommended order
+									</button>
+								</div>
 							</div>
+							<SideModal isOpen = {isOpen} setIsOpen = {setIsOpen} />
+
 							<div className="py-5 grid grid-cols-2">
 								<div className="flex items-center gap-2 py-4">
 									<div>
@@ -165,7 +178,7 @@ const Insight = () => {
 							<span className="block w-full h-[2px] bg-[#BFBFBF] my-10"></span>
 							<div className="bg-[#F5F5F5]">
 								<div className="p-5 bg-[#F5F5F5] rounded-lg">
-									<p className="text-sm">
+									<p>
 										The demand for the products below has
 										increased in your area; consider
 										stocking up on them as soon possible
