@@ -13,6 +13,7 @@ import betamalt from "../assets/BetaMalt.svg";
 import grandmalt from "../assets/GrandMalt.svg";
 import eagle from "../assets/Eagle.svg";
 import SideModal from "../components/SideModal";
+import Carousel from "@/components/Carousel";
 
 const Insight = () => {
 	const [isOpen, setIsOpen] = useState(false);
@@ -244,6 +245,7 @@ const Insight = () => {
 									customers happy, and grow like never before
 								</p>
 							</div>
+							<Carousel />
 							<span className="block w-full h-[1px] bg-[#BFBFBF] my-5"></span>
 							<div className="p-5 mt-16 bg-[#F5F5F5] rounded-lg">
 								<p className="text-sm">
